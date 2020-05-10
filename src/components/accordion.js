@@ -18,7 +18,7 @@ export const Accordion = (props) => {
 
   const passProps = removeProps(props, objectKeys(Accordion.propTypes));
 
-  return <ul {...passProps} className={className}>{props.children || []}</ul>;
+  return ( <ul {...passProps} className={className}>{props.children || []}</ul> );
 };
 
 Accordion.propTypes = {
